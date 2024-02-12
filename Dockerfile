@@ -1,4 +1,4 @@
-FROM python:3.11-alpine
+FROM python:3.9-alpine
 LABEL org.opencontainers.image.authors="Sahil Hashimli"
 
 ENV PYTHONUNBUFFERED 1
