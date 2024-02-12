@@ -1,23 +1,14 @@
-{
-  "language": "python",
-  "os": [
-    "linux"
-  ],
-  "dist": "xenial",
-  "python": [
-    "3.9"
-  ],
-  "services": [
-    "docker"
-  ],
-  "before_install":[
-    "sudo apt-get update",
-    "sudo apt-get install -y libssl-dev"
-  ],
-  "before_script": [
-    "pip install docker-compose"
-  ],
-  "script": [
-    "docker-compose run app sh -c \"python manage.py test && flake8\""
-  ]
-}
+language: python
+os: linux
+dist: xenial
+python: 3.9
+services:
+  - docker
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y libssl-dev
+  - sudo apt-get install -y openssl
+before_script:
+  - pip install docker-compose
+script:
+  - docker-compose run app sh -c "python manage.py test && flake8"
