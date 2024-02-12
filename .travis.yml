@@ -9,6 +9,7 @@ before_install:
   - sudo apt-get install -y libssl-dev
   - sudo apt-get install -y openssl
 before_script:
+  - pip install urllib3==1.26.6
   - pip install docker-compose
 script:
   - docker-compose run app sh -c "python manage.py test && flake8"
