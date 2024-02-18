@@ -26,7 +26,7 @@ class PublicTagApiTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
 
 
-class PrivateagApiTests(TestCase):
+class PrivateTagApiTests(TestCase):
     """Test that authorized user tags API"""
 
     def setUp(self):
@@ -84,7 +84,7 @@ class PrivateagApiTests(TestCase):
             user=self.user,
             name=payload['name']
         ).exists()
-        
+
         self.assertTrue(exists)
 
     def test_create_tag_invalid(self):
