@@ -51,7 +51,7 @@ Welcome to the Recipe App API, a Django-based backend service designed for manag
 
 This project follows a Test-Driven Development (TDD) approach. All features and functionalities are developed alongside tests to ensure the reliability and stability of the codebase.
 
-To run the tests, use the following command:
+1. To run the tests, use the following command:
     ```bash
     docker-compose run app sh -c "python manage.py test"
 
