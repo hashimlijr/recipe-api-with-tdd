@@ -13,6 +13,7 @@ Welcome to the Recipe App API, a Django-based backend service designed for manag
 - **User-Friendly API Endpoints:** Access user-friendly API endpoints, making integration with front-end applications a breeze.
 
 - **Dockerized Setup:** Enjoy a seamless deployment process with the included Dockerized setup.
+- **Test-Driven Development (TDD):** Embrace a Test-Driven Development approach for robust and reliable code.
 
 ## Technologies Used
 
@@ -45,6 +46,14 @@ Welcome to the Recipe App API, a Django-based backend service designed for manag
    ```bash
    docker-compose up
 4. **Access the API at http://localhost:8000**
+
+## Test-Driven Development (TDD)
+
+This project follows a Test-Driven Development (TDD) approach. All features and functionalities are developed alongside tests to ensure the reliability and stability of the codebase.
+
+To run the tests, use the following command:
+    ```bash
+    docker-compose run app sh -c "python manage.py test"
 
 ## Contributing
 
